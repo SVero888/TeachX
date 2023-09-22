@@ -1,6 +1,9 @@
 {
-  "version": 2,
   "canisters": {
+    "users": {
+      "type": "motoko",
+      "main": "canisters/users.mo"
+    },
     "whoami": {
       "main": "canisters/whoami.mo",
       "type": "motoko",
@@ -19,19 +22,16 @@
       }
     },
     "frontend": {
-      "dependencies": [
-        "whoami",
-        "internet_identity"
-      ],
+      "dependencies": ["whoami", "users"],
       "type": "assets",
       "source": ["dist/"]
     }
   },
   "defaults": {
     "build": {
-      "packtool": "",
-      "args": ""
+      "packtool": "npm run --silent sources"
     }
   },
-  "output_env_file": ".env"
+  "output_env_file": ".env",
+  "version": 2
 }

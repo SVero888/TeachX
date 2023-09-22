@@ -1,24 +1,11 @@
-import { useEffect } from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
-import WebFont from 'webfontloader';
-import Home from "./pages/Home";
+import { useEffect, useState } from 'react';
+import './index.css';
+import Home from './pages/home/home';
 
 function App() {
-  useEffect(() => {
-    WebFont.load({
-      google: {
-        families: ['Roboto']
-      }
-    });
-  }, []);
-
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home/>} />
-        </Routes>
-      </BrowserRouter>
+      <Home />
     </div>
   );
 }

@@ -68,7 +68,7 @@ export const useAuthClient = (options: AuthOptions = defaultOptions) => {
 
   async function logout() {
     await authClient?.logout();
-    await updateClient(authClient!); // El operador '!' indica que no será nulo
+    await updateClient(authClient!);
   }
 
   return {
