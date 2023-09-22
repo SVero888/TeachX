@@ -7,7 +7,7 @@ export default function Home() {
       <Nav />
       <div className="hero">
         <h1>Aprende más con TeachX desde hoy</h1>
-        <p>Donde aprender sobre blockchain, criptomonedas y la web3 es simple, fácil y gratis. Desde tú pais inicia tu formación profesional hacia la web3.</p>
+        <p>Donde aprender sobre blockchain, criptomonedas y la web3 es simple, fácil y gratis. Desde tú pais. Inicia tu formación profesional hacia la web3.</p>
       </div>
     </>
   )

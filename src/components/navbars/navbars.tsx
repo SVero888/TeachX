@@ -5,6 +5,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import "./navbars.scss";
+import Icon from '@mdi/react';
+import { mdiMagnify } from '@mdi/js';
+import { InputGroup } from 'react-bootstrap';
 
 export default function Navbars() {
   return (
@@ -23,14 +26,17 @@ export default function Navbars() {
         
         <div className="navbar-right">
           <Navbar.Collapse>
-            <Form className='searchbox'>
+            <InputGroup className="outlined-search-box">
               <Form.Control
                 type="search"
                 placeholder="Buscar"
-                className="mr-2 outlined-search-box" 
-                aria-label="Buscar"
+                className="search-input"
+                
               />
-            </Form>
+              <InputGroup.Text className='search-icon'>
+                <Icon path={mdiMagnify} size={1} />
+              </InputGroup.Text>
+            </InputGroup>
           </Navbar.Collapse>
         </div>
       </Container>

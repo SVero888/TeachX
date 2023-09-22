@@ -1,20 +1,37 @@
 .searchbox {
   width: 100%;
-  
+}
+
+.nav a {
+  color: white;
+  margin: 0 10px;
+  padding: 0 12px;
 }
 
 .navbar-right {
   width: 200px !important;
 
-  .outlined-search-box {
+  .search-input {
     border: 1px solid #ced4da;
     border-radius: 4px;
     padding: 6px 12px;
     background-color: transparent;
     color: white; 
+    border-right: none;
   }
 
-  .outlined-search-box::placeholder {
+  .search-input::placeholder {
     color: white;
+  }
+
+  .search-icon {
+    background-color: transparent;
+    border-left: none;
+    color: white;
+  }
+
+  .outlined-search-box .search-input:focus {
+    outline: none !important;
+    box-shadow: none !important;
   }
 }
