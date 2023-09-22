@@ -3,24 +3,24 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import "./navbars.scss";
 import Icon from '@mdi/react';
 import { mdiMagnify } from '@mdi/js';
 import { InputGroup } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 export default function Navbars() {
   return (
     <Navbar expand="lg"  variant="dark">
       <Container>
-        <Navbar.Brand>TeachX</Navbar.Brand>
+        <Navbar.Brand className='brand'><NavLink to={'/'}>TeachX</NavLink></Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
           <Nav className="nav mx-auto"> 
-            <Nav.Link href="#action1">Cursos</Nav.Link>
-            <Nav.Link href="#action2">Nosotros</Nav.Link>
-            <Nav.Link href="#action2">FAQs</Nav.Link>
-            <Nav.Link href="#action2">Recursos</Nav.Link>
+            <NavLink to={'/cursos'}>Cursos</NavLink>
+            <NavLink to={'/nosotros'}>Nosotros</NavLink>
+            <NavLink to={'/faqs'}>FAQs</NavLink>
+            <NavLink to={'/recursos'}>Recursos</NavLink>
           </Nav>
         </Navbar.Collapse>
         

@@ -2,5 +2,11 @@
 @import 'variables';
 
 body {
-  background-color: $bg-color;
+  background: linear-gradient(109.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%, rgb(0, 212, 255) 100.2%);
+  height: 100vh;
+}
+
+.main {
+  background-color: rgba($color: #000000, $alpha: 0.65);
+  height: 100vh;
 }

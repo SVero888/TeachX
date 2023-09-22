@@ -1,6 +1,12 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 body {
-  background-color: #000;
+  background: linear-gradient(109.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%, rgb(0, 212, 255) 100.2%);
+  height: 100vh;
+}
+
+.main {
+  background-color: rgba(0, 0, 0, 0.65);
+  height: 100vh;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,11 +1,13 @@
-.searchbox {
-  width: 100%;
+.brand a {
+  text-decoration: none;
+  color: white;
 }
 
 .nav a {
   color: white;
   margin: 0 10px;
   padding: 0 12px;
+  text-decoration: none;
 }
 
 .navbar-right {
@@ -34,4 +36,8 @@
     outline: none !important;
     box-shadow: none !important;
   }
+}
+
+.searchbox {
+  width: 100%;
 }

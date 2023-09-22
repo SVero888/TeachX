@@ -6,7 +6,7 @@
   "scripts": {
     "setup": "npm i && dfx generate && dfx deploy",
     "start": "run-p frontend",
-    "frontend": "ID=$(dfx canister id frontend) && echo \"[canister] frontend → http://127.0.0.1:4943?canisterId=$ID\" && xdg-open \"http://127.0.0.1:4943?canisterId=$ID\"",
+    "frontend": "ID=$(dfx canister id frontend) && echo \"frontend → http://127.0.0.1:4943?canisterId=$ID\" && xdg-open \"http://127.0.0.1:4943?canisterId=$ID\"",
     "dev": "sass --watch src/styles/App.scss src/index.css > /dev/null 2>&1 & vite --port 3000",
     "build": "sass src/styles/App.scss src/index.css && tsc && vite build",
     "test": "run-s test:backend test:frontend",
