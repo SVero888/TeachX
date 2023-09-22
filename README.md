@@ -9,8 +9,9 @@ Requisitos
 
 ```bash
 cd teachx
+npm install
 dfx start --background --clean
-dfx generate
 dfx deploy
-npm run dev
+npm run build
+npm start
 ```
