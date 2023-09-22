@@ -1,0 +1,20 @@
+.searchbox {
+  width: 100%;
+  
+}
+
+.navbar-right {
+  width: 200px !important;
+
+  .outlined-search-box {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 6px 12px;
+    background-color: transparent;
+    color: white; 
+  }
+
+  .outlined-search-box::placeholder {
+    color: white;
+  }
+}
