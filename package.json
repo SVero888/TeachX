@@ -1,0 +1,50 @@
+{
+  "name": "teachx",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "Educación"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "scripts": {
+    "prebuild": "npm run generate",
+    "build": "npm run compile-sass && vite build dist --config vite.config.js",
+    "start": "vite dist --config vite.config.js",
+    "compile-sass": "node-sass src/styles/App.scss -o dist/assets/app.css",
+    "dev": "vite . --config vite.config.js",
+    "generate": "dfx generate whoami",
+    "sources": "mops sources",
+    "postinstall": "mops install"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "node-sass": "^9.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.2",
+    "react-router-dom": "^6.16.0",
+    "vite": "^4.3.9",
+    "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "@dfinity/agent": "^0.15.6",
+    "@dfinity/auth-client": "^0.15.6",
+    "@dfinity/candid": "^0.15.6",
+    "@dfinity/principal": "^0.15.6",
+    "@types/node": "^20.6.3",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@types/webfontloader": "^1.6.35",
+    "@vitejs/plugin-react": "^4.0.1",
+    "buffer": "^6.0.3",
+    "compressorjs": "^1.2.1",
+    "dotenv": "^16.3.1",
+    "ic-mops": "^0.17.2",
+    "mo-dev": "^0.11.2",
+    "prettier": "^2.8.8",
+    "prettier-plugin-motoko": "^0.5.3",
+    "typescript": "^4.8.4",
+    "vite-plugin-environment": "^1.1.3"
+  }
+}
