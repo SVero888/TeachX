@@ -17,45 +17,46 @@ export default function Footer() {
     position: 'fixed',
     bottom: 0,
     width: '100%',
-    backgroundColor: 'dark',
   };
 
 
   return (
-    <Navbar expand="lg"  variant="dark" style={footerStyle}>
-      <Container>
-        <Navbar.Brand className='brand'><NavLink to={'/'}>TeachX</NavLink></Navbar.Brand>
-        <Navbar.Toggle />
-        <Navbar.Collapse>
-          <Nav className="nav mx-auto"> 
-            <NavLink to={'/terminos-y-condiciones'}>Términos y condiciones</NavLink>
-            <NavLink to={'/contacto'}>Contacto</NavLink>
-            <NavLink to={'/politicas'}>Políticas</NavLink>
-          </Nav>
-        </Navbar.Collapse>
-        
-        <div className="footer-right">
+    <div className='footer' style={footerStyle}>
+      <Navbar expand="lg"  variant="dark" className='footer-filter'>
+        <Container>
+          <Navbar.Brand className='brand'><NavLink to={'/'}>TeachX</NavLink></Navbar.Brand>
+          <Navbar.Toggle />
           <Navbar.Collapse>
-            <Row>
-              <Col xs={4} sm={2}>
-                <Button variant="link">
-                  <Icon path={mdiInstagram} size={1} className="footer-btn" />
-                </Button>
-              </Col>
-              <Col xs={4} sm={2}>
-                <Button variant="link">
-                  <Icon path={mdiTwitter} size={1} className="footer-btn" />
-                </Button>
-              </Col>
-              <Col xs={4} sm={2}>
-                <Button variant="link">
-                  <Icon path={mdiLinkedin} size={1} className="footer-btn" />
-                </Button>
-              </Col>
-            </Row>
+            <Nav className="nav mx-auto"> 
+              <NavLink to={'/terminos-y-condiciones'}>Términos y condiciones</NavLink>
+              <NavLink to={'/contacto'}>Contacto</NavLink>
+              <NavLink to={'/politicas'}>Políticas</NavLink>
+            </Nav>
           </Navbar.Collapse>
-        </div>
-      </Container>
-    </Navbar>
+          
+          <div className="footer-right">
+            <Navbar.Collapse>
+              <Row>
+                <Col xs={4} sm={2}>
+                  <Button variant="link">
+                    <Icon path={mdiInstagram} size={1} className="footer-btn" />
+                  </Button>
+                </Col>
+                <Col xs={4} sm={2}>
+                  <Button variant="link">
+                    <Icon path={mdiTwitter} size={1} className="footer-btn" />
+                  </Button>
+                </Col>
+                <Col xs={4} sm={2}>
+                  <Button variant="link">
+                    <Icon path={mdiLinkedin} size={1} className="footer-btn" />
+                  </Button>
+                </Col>
+              </Row>
+            </Navbar.Collapse>
+          </div>
+        </Container>
+      </Navbar>
+    </div>
   )
 }
