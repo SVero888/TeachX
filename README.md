@@ -9,9 +9,17 @@ Requisitos
 
 ```bash
 cd teachx
-npm install
-dfx start --background --clean
-dfx deploy
-npm run build
-npm start
+npm run start
 ```
+
+en caso de salir un aviso es porque hay que darle permisos de ejecución
+
+```bash
+sudo chmod 777 ./start.sh
+```
+entonces intentar nuevamente
+
+```bash
+npm run start
+```
+
