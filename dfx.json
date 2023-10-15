@@ -1,0 +1,44 @@
+{
+  "canisters": {
+    "whoami": {
+      "main": "canisters/whoami/Main.mo",
+      "type": "motoko",
+      "declarations": {
+        "node_compatibility": true
+      }
+    },
+    "opend": {
+      "main": "canisters/opend/Main.mo",
+      "type": "motoko"
+    },
+    "nft":{
+      "main":"canisters/NFT/Main.mo",
+      "type":"motoko"
+    },
+    "internet_identity": {
+      "type": "custom",
+      "candid": "https://github.com/dfinity/internet-identity/releases/download/release-2023-09-08/internet_identity.did",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/download/release-2023-09-08/internet_identity_dev.wasm.gz",
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      }
+    },
+    "opend_assets": {
+      "dependencies": [
+        "opend"
+      ],
+      "frontend": {
+        "entrypoint": "index.html"
+      },
+      "source": [
+        "src/assets/",
+        "public/"
+      ],
+      "type": "assets"
+    }
+  },
+  "output_env_file": ".env",
+  "version": 2
+}
